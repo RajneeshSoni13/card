@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card2</title>
+    <style>
+         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 99vw;
+            height: 99vh;
+            background-color: #0093E9;
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+            display: flex;
+            justify-self: center;
+           align-items: center;
+           box-shadow: 2px 2px 35px black;
+
+        }
+        .card{
+            height: 580px;
+            width: 400px;
+            background-color: white;
+            border-radius: 20px;
+            margin: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+           
+
+        }
+        .card img{
+            height:180px ;
+            width: 400px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            
+        }
+        .textbox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding:8px ;
+            margin: 4px;
+            width: 90%;
+            text-align: center;
+        }
+        #amountbox{
+            width: 300px;
+            height: 60px;
+            background-color: rgba(12, 12, 50, 0.598);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 20px;
+           
+        }
+        .leftbox{
+            width: fit-content;
+            display: flex;
+            gap: 15px;
+
+
+        }
+        .leftbox img {
+            width: 70px;
+            height: 60px;
+        }
+        #paymentbutton{
+            width: 300px;
+            height: 55px;
+            background-color: rgba(37, 37, 119, 0.833);
+            color: white;
+            border-radius: 10px;
+             box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); 
+            /* box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16); */
+          
+        }
+        
+        .canclebox a {
+            text-decoration: none;
+            color: brown;
+            font-weight: bold;
+            font-size: large;
+
+        }
+
+        #textamountbox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+       
+        }
+
+        .card  img:hover{
+            transform: scale(1.1);
+            transition: all 2s 0s linear ;
+        }
+
+       #paymentbutton :hover{
+        transform: scale(1.3);
+        transition: all 2s 0s linear;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?s=612x612&w=0&k=20&c=GkAOxzduJbUKpS2-LX_l6jSKtyhdKlnPMo2ito4xpR4=" alt="">
+            
+            <div class="textbox">
+                <h2>Order Summary</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequuntur odit quaerat ut esse, repellat assumenda. Neque doloribus voluptatibus provident.</P>
+
+
+            </div> 
+            <div id="amountbox">
+                <div class="leftbox">
+                    <div class="imgbox">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Music_logo.png" alt="">
+                    </div>
+                    <div id="textamountbox">
+                        <p>Amount</p>
+                        <p>$299.99</p>
+                    </div>
+
+                </div>
+                <div class="rightbox">
+                    <a href="">change</a>
+                </div>
+
+            </div>
+            <button id="paymentbutton">
+                <h3>proceed to pay </h3>
+
+            </button>
+            <div class="canclebox">
+                <a  href=""> order  cancle</a>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
